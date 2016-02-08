@@ -11,5 +11,9 @@ var console = new LucyConsole({
 })
 
 App.use(Express.static(__dirname + '/static'));
-App.use(console.router);
+App.use(require('body-parser').json());
+require('./codegen.js').initialize(function(router) {
+  App.use(router);
+  App.use(console.router);
+});
 App.listen(3000);

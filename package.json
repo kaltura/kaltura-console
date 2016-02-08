@@ -8,7 +8,10 @@
   },
   "author": "",
   "dependencies": {
+    "body-parser": "^1.14.2",
+    "ejs": "^2.4.1",
     "express": "^4.13.4",
+    "kaltura-schema": "^1.0.0",
     "lucy-codegen": "^1.0.1",
     "lucy-console": "^1.0.8"
   }
