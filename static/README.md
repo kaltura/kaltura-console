@@ -10,9 +10,9 @@ This API documentation provides specific information on:
 * Kaltura Objects and their related properties
 * Kaltura Enumerated Types and their values
 
-A prerequisite for using Kaltura APIs is obtaining Kaltura partner identifiers, such as Partner ID. Learn more about obtaining Kaltura partner identifiers.
+A prerequisite for using Kaltura APIs is obtaining Kaltura partner identifiers, such as Partner ID. Learn more about [obtaining Kaltura partner identifiers](http://www.kaltura.org/how-obtain-partner-identifiers#comment-form).
 
-In addition to this documentation, Kaltura provides an API Test Console Application, allowing you to develop applications using the Kaltura API.
+In addition to this documentation, Kaltura provides an [API Test Console Application](#Console), allowing you to develop applications using the Kaltura API.
 
-For additional support, please visit Kaltura Community Forums.
+For additional support, please visit [Kaltura Community Forums](http://www.kaltura.org/forums).
 
