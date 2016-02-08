@@ -11,6 +11,9 @@ var console = new LucyConsole({
   codegenPath: '/code/build/kc_request',
 })
 
+App.get('/swagger.json', function(req, res) {
+  res.json(Swagger);
+})
 App.use(Express.static(__dirname + '/static'));
 App.use(require('body-parser').json());
 require('./codegen.js').initialize(function(router) {
