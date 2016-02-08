@@ -1,7 +1,10 @@
+var FS = require('fs');
 var Express = require('express'),
     App = Express();
-var Swagger = require('./static/swagger.json');
 var LucyConsole = require('lucy-console');
+
+var Swagger = require('./static/swagger.json');
+Swagger.info['x-lucy/readme'] = FS.readFileSync(__dirname + '/static/README.md', 'utf8')
 
 var console = new LucyConsole({
   swagger: Swagger,
