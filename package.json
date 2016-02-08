@@ -8,6 +8,7 @@
   },
   "author": "",
   "dependencies": {
+    "express": "^4.13.4",
     "lucy-codegen": "^1.0.1",
     "lucy-console": "^1.0.8"
   }
