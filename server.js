@@ -9,6 +9,7 @@ var console = new LucyConsole({
   disableAutorefresh: true,
   development: process.env.DEVELOPMENT ? true : false,
   codegenPath: '/code/build/kc_request',
+  proxy: true,
 })
 
 App.get('/swagger.json', function(req, res) {
