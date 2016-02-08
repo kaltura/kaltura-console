@@ -69,7 +69,14 @@ module.exports.initialize = function(cb) {
       }
       var lucy = new Lucy(lang, answers);
       lucy.returnCode = function(val, tabs) {
-        var ret = 'console.log(' + val + ')';
+        var ret = '';
+        if (lang === 'javascript' || lang === 'node') {
+          ret = 'console.log(' + val + ')';
+        } else if (lang === 'ruby') {
+          ret = 'puts ' + val;
+        } else if (lang === 'php') {
+          ret = 'echo ' + val;
+        }
         for (var i = 0; i < tabs; ++i) ret = ' ' + ret;
         return ret;
       }
