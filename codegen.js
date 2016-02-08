@@ -52,13 +52,13 @@ module.exports.initialize = function(cb) {
       }
     }
 
-    Router.post('/code/build/request', function(req, res) {
+    Router.post('/code/build/kc_request', function(req, res) {
       var path = req.body.request.path;
       var parts = path.match(/service\/(\w+)\/action\/(\w+)$/);
       var service = parts[1], action = parts[2];
       var lang = req.body.language;
       var codeParams = renderParams[service][action];
-      var tmpl = FS.readFileSync(__dirname + '/generic_actions/' + lang + EXT[lang], 'utf8')
+      var tmpl = FS.readFileSync(__dirname + '/generic_actions/' + lang + EXT[lang], 'utf8');
       req.body.request.query = req.body.request.query || {};
       tmpl = EJS.render(tmpl, codeParams);
       var answers = {};

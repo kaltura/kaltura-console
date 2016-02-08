@@ -8,6 +8,7 @@ var console = new LucyConsole({
   cssIncludes: ['/css/bootstrap.css', '/css/styles.css'],
   disableAutorefresh: true,
   development: process.env.DEVELOPMENT ? true : false,
+  codegenPath: '/code/build/kc_request',
 })
 
 App.use(Express.static(__dirname + '/static'));
