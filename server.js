@@ -24,4 +24,4 @@ require('./codegen.js').initialize(function(router) {
   App.use(router);
   App.use(console.router);
 });
-App.listen(3000);
+App.listen(process.env.KALTURA_CONSOLE_PORT || 3000);
